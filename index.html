@@ -1,44 +1,59 @@
 <!-- Jai Shree Ram -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Days Left -</title>
-    <link
-      rel="stylesheet"
-      href="https://api.chipware.co.za/css/flipclock.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      * {
-        color: #fff;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Days Left -</title>
+        <link
+            rel="stylesheet"
+            href="https://api.chipware.co.za/css/flipclock.css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            * {
+                color: #fff;
+            }
 
-      /* Add these new styles */
-      .flip-clock-wrapper a {
-        color: #fff;
-      }
+            .flip-clock-wrapper a {
+                color: #fff;
+            }
 
-      .flip-clock-wrapper .flip-clock-divider .flip-clock-label {
-        color: #fff;
-      }
+            .flip-clock-wrapper .flip-clock-divider .flip-clock-label {
+                color: #fff;
+            }
 
-      .flip-clock-wrapper {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="main w-full h-screen absolute bg-[#111]">
-      <div
-        class="absolute top-1/2 left-1/2 w-[700px] h-[100px] -ml-[350px] -mt-[60px]"
-        id="clock1"
-      ></div>
-    </div>
+            .flip-clock-wrapper {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                transform: scale(1);
+            }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://api.chipware.co.za/js/flipclock-min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+            /* Responsive styles */
+            @media screen and (max-width: 768px) {
+                .flip-clock-wrapper {
+                    transform: scale(0.7);
+                    margin-top: -20px;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .flip-clock-wrapper {
+                    transform: scale(0.5);
+                    margin-top: -40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main w-full h-screen absolute bg-[#111]">
+            <div
+                class="absolute top-1/2 left-1/2 w-full max-w-[700px] h-[100px] transform -translate-x-1/2 -translate-y-1/2 px-4"
+                id="clock1"
+            ></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://api.chipware.co.za/js/flipclock-min.js"></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
