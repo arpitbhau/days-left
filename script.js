@@ -1,3 +1,5 @@
+// Jai Shree Ram
+
 // Set target date to December 31, 2025 23:59:59
 var targetDate = new Date("December 31, 2025 23:59:59");
 var now = new Date();
