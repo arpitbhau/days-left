@@ -82,7 +82,6 @@ function BGM() {
 }
 
 clock()
-BGM()
 
 
 
