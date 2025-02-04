@@ -1,23 +1,18 @@
-#clock1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 700px;
-	margin-left: -350px; /*set to a negative number 1/2 of your width*/
-	height:100px;
-	margin-top: -60px; /*set to a negative number 1/2 of your height*/
-}
-
+/* Jai Shree Ram */
 * {
 	color: #fff;
 }
 
 .flip-clock-wrapper a {
 	color: #fff;
+	mix-blend-mode: difference;
+	font-size: larger;
 }
 
 .flip-clock-wrapper .flip-clock-divider .flip-clock-label {
 	color: #fff;
+	mix-blend-mode: difference;
+	font-size: larger;
 }
 
 .flip-clock-wrapper {
